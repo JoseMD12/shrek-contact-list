@@ -8,12 +8,7 @@ import { ContainerComponent } from '../../components/container/container.compone
 import { HeaderComponent } from '../../components/header/header.component';
 import { SeparatorComponent } from '../../components/separator/separator.component';
 import { ContatoComponent } from '../../components/contato/contato.component';
-
-interface Contato {
-  id: string;
-  nome: string;
-  telefone: string;
-}
+import { Contato } from '../../components/contato/contato';
 
 @Component({
   selector: 'app-contact-list',

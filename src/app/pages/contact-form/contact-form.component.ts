@@ -2,7 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { ContainerComponent } from '../../components/container/container.component';
 import { SeparatorComponent } from '../../components/separator/separator.component';
 import { CommonModule } from '@angular/common';
-import { RouterLink } from '@angular/router';
+import { Router, RouterLink } from '@angular/router';
 import {
   FormControl,
   FormGroup,
@@ -25,6 +25,8 @@ import {
 })
 export class ContactFormComponent implements OnInit {
   contactForm!: FormGroup;
+
+  constructor(private router: Router) {}
 
   ngOnInit() {
     this.contactForm = new FormGroup({
@@ -98,5 +100,7 @@ export class ContactFormComponent implements OnInit {
       return;
     }
     console.log(this.contactForm.value);
+    this.contactForm.reset();
+    this.router.navigateByUrl('contact-list');
   }
 }

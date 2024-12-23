@@ -1,10 +1,5 @@
 import { Injectable } from '@angular/core';
-
-interface Contato {
-  id: string;
-  nome: string;
-  telefone: string;
-}
+import { Contato } from '../components/contato/contato';
 
 @Injectable({
   providedIn: 'root',
@@ -12,7 +7,7 @@ interface Contato {
 export class ContatoService {
   constructor() {}
 
-  addContact(contact: any) {
+  addContact(contact: Contato) {
     console.log(contact);
   }
 }
