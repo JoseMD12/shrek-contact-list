@@ -1,0 +1,102 @@
+[
+  {
+    "id": "1",
+    "nome": "Shrek",
+    "telefone": "555-1234"
+  },
+  {
+    "id": "2",
+    "nome": "Fiona",
+    "telefone": "555-5678"
+  },
+  {
+    "id": "3",
+    "nome": "Burro",
+    "telefone": "555-8765"
+  },
+  {
+    "id": "4",
+    "nome": "Lord Farquaad",
+    "telefone": "555-4321"
+  },
+  {
+    "id": "5",
+    "nome": "Gato de Botas",
+    "telefone": "555-6789"
+  },
+  {
+    "id": "6",
+    "nome": "Pinóquio",
+    "telefone": "555-1357"
+  },
+  {
+    "id": "7",
+    "nome": "Biscoito de Gengibre",
+    "telefone": "555-2468"
+  },
+  {
+    "id": "8",
+    "nome": "Dragão",
+    "telefone": "555-9753"
+  },
+  {
+    "id": "9",
+    "nome": "Rei Harold",
+    "telefone": "555-8642"
+  },
+  {
+    "id": "10",
+    "nome": "Rainha Lillian",
+    "telefone": "555-7531"
+  },
+  {
+    "id": "11",
+    "nome": "Príncipe Encantado",
+    "telefone": "555-3141"
+  },
+  {
+    "id": "12",
+    "nome": "Rei Arthur",
+    "telefone": "555-2718"
+  },
+  {
+    "id": "13",
+    "nome": "Doris",
+    "telefone": "555-8493"
+  },
+  {
+    "id": "14",
+    "nome": "Três Porquinhos",
+    "telefone": "555-7621"
+  },
+  {
+    "id": "15",
+    "nome": "Lobo Mau",
+    "telefone": "555-6584"
+  },
+  {
+    "id": "16",
+    "nome": "Os Três Ursos",
+    "telefone": "555-9832"
+  },
+  {
+    "id": "17",
+    "nome": "Capitão Gancho",
+    "telefone": "555-5432"
+  },
+  {
+    "id": "18",
+    "nome": "Rapunzel",
+    "telefone": "555-2198"
+  },
+  {
+    "id": "19",
+    "nome": "Cinderela",
+    "telefone": "555-3347"
+  },
+  {
+    "id": "20",
+    "nome": "Gato Sorridente",
+    "telefone": "555-7643"
+  }
+]

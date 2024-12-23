@@ -1,0 +1,47 @@
+<app-container>
+  <section class="back-arrow" routerLink="/contact-list">
+    <img src="/assets/pixel-shrek.png" alt="add" />
+    <span>Voltar</span>
+  </section>
+  <header>
+    <section class="header-logo">
+      <img src="/assets/logo.png" alt="logo" />
+    </section>
+    <section class="header-lord-farquaad">
+      <img src="/assets/lord-farquaad.jpg" alt="shrek" />
+      <h1 class="title">Adicionar Contato</h1>
+    </section>
+  </header>
+  <form [formGroup]="contactForm" (ngSubmit)="salvarContato()">
+    @for (formLabel of formLabels; track formLabel) {
+    <label for="{{ formLabel.id }}">{{ formLabel.label }}</label>
+    <input
+      type="{{ formLabel.type }}"
+      id="{{ formLabel.id }}"
+      placeholder="{{ formLabel.placeholder }}"
+      formControlName="{{ formLabel.id }}"
+    />
+
+    @if(contactForm.get(formLabel.id)?.invalid &&
+    contactForm.get(formLabel.id)?.touched) {
+    @if(contactForm.get(formLabel.id)?.errors?.['required']) {
+
+    <div class="error-message">Campo Obrigatório</div>
+    } @else if (contactForm.get(formLabel.id)?.errors?.['email']) {
+
+    <div class="error-message">Email inválido</div>
+    } @else if (contactForm.get(formLabel.id)?.errors?.['pattern']) {
+
+    <div class="error-message">Telefone inválido</div>
+    } } @if ($index === 2) {
+    <app-separator></app-separator>
+    } }
+
+    <section class="buttons">
+      <button class="cancel" type="reset">Cancelar</button>
+      <button [disabled]="contactForm.invalid" class="save" type="submit">
+        Salvar
+      </button>
+    </section>
+  </form>
+</app-container>

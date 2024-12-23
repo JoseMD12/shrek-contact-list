@@ -1,0 +1,10 @@
+h2 {
+  display: flex;
+  flex-direction: column;
+  color: darkgreen;
+  font-size: 20px;
+  font-weight: bold;
+  font-family: "Barriecito";
+  padding-bottom: 5px;
+  border-bottom: 1px solid darkgreen;
+}

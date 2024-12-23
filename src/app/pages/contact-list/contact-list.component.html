@@ -1,0 +1,19 @@
+<app-container>
+  <app-header></app-header>
+
+  <input type="search" placeholder="Buscar contato" [(ngModel)]="textFilter" />
+  <button routerLink="/contact-form">
+    <img src="/assets/pixel-shrek.png" alt="add" />
+    <span>Adicionar Contato</span>
+  </button>
+
+  @for (letra of alphabet; track letra) {
+  <app-separator>{{ letra }}</app-separator>
+
+  <app-contato
+    *ngFor="let contato of filterByLetter(letra)"
+    [nome]="contato.nome"
+    [telefone]="contato.telefone"
+  ></app-contato>
+  }
+</app-container>

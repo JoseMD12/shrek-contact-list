@@ -1,0 +1,27 @@
+.contato ul {
+  display: flex;
+  padding: 0;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.contato ul li {
+  list-style: none;
+  /* font-family: "Barriecito"; */
+  font-size: 18px;
+  color: rgb(0, 68, 0);
+}
+
+.actions {
+  display: flex;
+  gap: 10px;
+}
+
+.contato ul li button {
+  border: 1px solid rgb(0, 68, 0);
+  background: rgba(0, 68, 0, 0.2);
+  font-size: 12px;
+  color: rgb(0, 68, 0);
+  cursor: pointer;
+}

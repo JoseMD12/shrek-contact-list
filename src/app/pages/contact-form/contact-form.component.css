@@ -1,0 +1,109 @@
+header {
+  display: flex;
+  flex-direction: column;
+  font-family: "Barriecito";
+  font-size: 30px;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  border-bottom: 1px solid darkgreen;
+  padding-bottom: 50px;
+}
+
+.back-arrow {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  height: fit-content;
+  gap: 10px;
+
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: bold;
+  color: darkgreen;
+}
+
+.back-arrow:hover {
+  opacity: 0.8;
+}
+
+.back-arrow img {
+  width: 30px;
+}
+
+.back-arrow img:hover {
+  transform: scale(1.1);
+}
+
+.header-logo img {
+  width: 300px;
+}
+
+.header-lord-farquaad {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.header-lord-farquaad img {
+  width: 60%;
+}
+
+form {
+  padding: 20px 0px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+form label {
+  padding-top: 20px;
+  font-family: "Barriecito";
+  font-size: 16px;
+  font-weight: bold;
+}
+
+form input {
+  width: 90%;
+  padding: 8px 20px;
+  box-sizing: border-box;
+  border-radius: 4px;
+  border: 1px solid #ccc;
+}
+
+.buttons {
+  display: flex;
+  width: 100%;
+  gap: 20px;
+  padding: 40px 0px;
+  justify-content: center;
+}
+
+button {
+  padding: 10px 20px;
+  border-radius: 4px;
+  border: 1px solid darkgreen;
+  background-color: darkgreen;
+  color: white;
+  cursor: pointer;
+}
+
+button:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+button:hover {
+  background-color: rgba(0, 68, 0, 0.7);
+}
+
+.cancel {
+  background-color: white;
+  color: darkgreen;
+}
+
+.error-message {
+  padding-top: 4px;
+  color: red;
+  font-size: 12px;
+}

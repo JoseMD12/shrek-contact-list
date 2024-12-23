@@ -1,0 +1,33 @@
+.header {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  border-bottom: 1px solid darkgreen;
+  padding-bottom: 50px;
+}
+
+img {
+  width: 300px;
+}
+
+.shrek {
+  transform: scaleX(-1);
+}
+
+.shrek:hover {
+  transform: rotate(180deg);
+}
+
+.title {
+  font-size: 24px;
+  font-weight: 200;
+  font-family: "Barriecito";
+  margin: 0;
+}
+
+.title > span {
+  font-weight: 600;
+  color: darkgreen;
+}
